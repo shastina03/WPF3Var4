@@ -1,0 +1,22 @@
+﻿<Window x:Class="Praktikum_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktikum_3"
+        mc:Ignorable="d"
+       Title="Вариант 4. Работа с датами" Height="300" Width="300">
+    <Grid>
+        <TextBlock Margin="10, 10, 10, 10" Height="20" VerticalAlignment="Top">Дата</TextBlock>
+        <GroupBox Header="Варианты:" HorizontalAlignment="Left" Height="126" Margin="10,35,0,0" VerticalAlignment="Top" Width="274">
+            <StackPanel>
+                <RadioButton x:Name="SystemTime" Content="Системное время" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="TokyoTime" Content="Токио" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="ChicagoTime" Content="Чикаго" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="LondonTime" Content="Лондон" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+            </StackPanel>
+        </GroupBox>
+
+        <TextBlock Name="TextBlockResult" TextWrapping="Wrap" Text="Время" Margin="10,180,10,67" TextAlignment="Center" Background="#FFFF6464" Foreground="White" Visibility="Hidden"/>
+    </Grid>
+</Window>
